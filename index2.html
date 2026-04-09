@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beranda</title>
+    <link rel="stylesheet" href="css/style(2).css">  
+</head>
+<body>
+
+    <nav class="back-container">
+        <a href="halaman1.html" class="btn-back">
+            <span>←</span> Kembali ke Beranda
+        </a>
+    </nav>
+
+    <div class="page-header">
+        <div class="page-tag">Kelola Bus</div>
+        <h1 class="page-title">Manajemen <em>Bus</em></h1>
+    </div>
+
+    <div class="main-content">
+
+        <aside>
+            <div class="form-card">
+                <div class="form-card-title">Tambah Data Bus</div>
+
+                <div class="form-group">
+                    <label for="namaBus">Nama Bus</label>
+                    <input type="text" id="namaBus" placeholder="cth. Sumber Kencono">
+                </div>
+                <div class="form-group">
+                    <label for="tujuanBus">Tujuan</label>
+                    <input type="text" id="tujuanBus" placeholder="cth. Surabaya">
+                </div>
+                <div class="form-group">
+                    <label for="jamBus">Jam Berangkat</label>
+                    <input type="time" id="jamBus">
+                </div>
+                <div class="form-group">
+                    <label for="hargaBus">Harga (Rp)</label>
+                    <input type="number" id="hargaBus" placeholder="cth. 75000">
+                </div>
+
+                <button class="btn-simpan" onclick="tambahData()">Simpan Data</button>
+            </div>
+        </aside>
+
+        <section class="table-section">
+            <div class="table-header">
+                <div class="table-title">Daftar Bus</div>
+                <div class="table-count" id="jumlahData">0 armada</div>
+            </div>
+
+            <div class="table-wrap">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Nama</th>
+                            <th>Tujuan</th>
+                            <th>Jam</th>
+                            <th>Harga</th>
+                            <th>Waktu</th>
+                            <th>Aksi</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tempatData">
+                        <tr>
+                            <td colspan="7">
+                                    <p>Belum ada data. Tambahkan bus pertama Anda.</p>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
